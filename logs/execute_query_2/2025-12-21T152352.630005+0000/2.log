@@ -1,0 +1,25 @@
+[2025-12-21 15:33:17,102] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_processing_pipeline.execute_query_2 manual__2025-12-21T15:23:52.630005+00:00 [queued]>
+[2025-12-21 15:33:17,295] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_processing_pipeline.execute_query_2 manual__2025-12-21T15:23:52.630005+00:00 [queued]>
+[2025-12-21 15:33:17,312] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2025-12-21 15:33:17,319] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2025-12-21 15:33:17,320] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2025-12-21 15:33:17,499] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): execute_query_2> on 2025-12-21 15:23:52.630005+00:00
+[2025-12-21 15:33:17,543] {standard_task_runner.py:52} INFO - Started process 5433 to run task
+[2025-12-21 15:33:17,577] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_processing_pipeline', 'execute_query_2', 'manual__2025-12-21T15:23:52.630005+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/data_processing_dag.py', '--cfg-path', '/tmp/tmpnjbawqxk', '--error-file', '/tmp/tmplglzea3j']
+[2025-12-21 15:33:17,583] {standard_task_runner.py:77} INFO - Job 35: Subtask execute_query_2
+[2025-12-21 15:33:18,177] {logging_mixin.py:109} INFO - Running <TaskInstance: data_processing_pipeline.execute_query_2 manual__2025-12-21T15:23:52.630005+00:00 [running]> on host 95a6c5e34ae7
+[2025-12-21 15:33:18,967] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_processing_pipeline
+AIRFLOW_CTX_TASK_ID=execute_query_2
+AIRFLOW_CTX_EXECUTION_DATE=2025-12-21T15:23:52.630005+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-12-21T15:23:52.630005+00:00
+[2025-12-21 15:33:19,088] {base.py:79} INFO - Using connection to: id: postgres_default. Host: host.docker.internal, Port: 5432, Schema: postgres, Login: postgres, Password: ***, extra: {}
+[2025-12-21 15:33:20,140] {logging_mixin.py:109} INFO - Результат запроса 2 сохранен в /opt/***/dags/out/query2_result.csv
+[2025-12-21 15:33:20,149] {logging_mixin.py:109} INFO - Количество строк: 15
+[2025-12-21 15:33:20,159] {python.py:175} INFO - Done. Returned value was: 15
+[2025-12-21 15:33:20,534] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_processing_pipeline, task_id=execute_query_2, execution_date=20251221T152352, start_date=20251221T153317, end_date=20251221T153320
+[2025-12-21 15:33:20,735] {local_task_job.py:154} INFO - Task exited with return code 0
+[2025-12-21 15:33:21,578] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
