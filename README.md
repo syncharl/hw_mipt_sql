@@ -1,3 +1,7 @@
-data_processing_dag.py - файл с DAG
+data_processing_dag.py - файл с DAG 
+
 logs - логи всех запросов
+
+outputs - результаты работы запросов
+
 Картинки - иллюстрации к работе
